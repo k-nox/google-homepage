@@ -9,15 +9,45 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header></header>
+        <header>
+            <nav>
+                <ul class="left list">
+                    <li class="top-nav"><a href="#">About</a></li>
+                    <li class="top-nav"><a href="#">Store</a></li>
+                </ul>
+                <ul class="right list">
+                    <li class="top-nav"><a href="#">Gmail</a></li>
+                    <li class="top-nav"><a href="#">Images</a></li>
+                    <li class="top-nav"><a href="#"><img src="images/apps-24px.svg" alt="Google Apps" title="Google Apps" class="apps-img"></a></li>
+                    <li class="top-nav">
+                        <button type="button" class="sign-in-btn">Sign In</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <section class="main-sec">
+            <form class="main-sec">
                 <label for="search">
                     <img src="images/googlelogo_color_272x92dp.png" alt="Google" class="logo">
                 </label>
                 <input type="text" id="search" name="search" class="search-bar" maxlength="2048">
-            </section>
+                <div class="buttons">
+                    <button type="button" class="main-btn">Google Search</button>
+                    <button type="button" class="main-btn">I'm Feeling Lucky</button>
+                </div>
+            </form>
         </main>
-        <footer></footer>
+        <footer>
+            <ul class="left list">
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+            </ul>
+            <ul class="right list">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
