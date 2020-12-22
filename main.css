@@ -1,7 +1,7 @@
-html {
+body {
     font-size: 16px;
-    width: 100%;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
 }
 
 nav {
@@ -10,14 +10,54 @@ nav {
 
 footer {
     background-color: #f2f2f2;
-    height: 35px;
+    height: 2.1875rem;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: calc(100%-4rem);
     margin-bottom: 0;
-    color: #5f6368;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+button {
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    font-family: inherit;
+}
+
+button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+li {
+    float: left;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: rgba(0,0,0,0.87);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a:hover, .apps-img:hover {
+    opacity: 0.85;
+}
+
+main {
+    width: 40%;
+    margin: 0 auto;
 }
 
 .list {
@@ -34,30 +74,15 @@ footer {
     float: left;
 }
 
-li {
-    float: left;
-    padding: 0.5rem;
-    font-size: 0.8rem;
-}
-
-a {
-    text-decoration: none;
-    color: #222;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a .apps-img {
+.apps-img {
     position: relative;
     top: -4px;
+    opacity: 0.50;
 }
 
 .sign-in-btn {
     background-color: #4285f4;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     border: 1px #4285f4;
     font-weight: bold;
     position: relative;
@@ -67,25 +92,22 @@ a .apps-img {
 
 .main-sec {
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-top: 5rem;
 }
 
 .search-bar {
-    width: 35%;
     border-radius: 24px;
     padding: 0.5rem;
     border: 1px solid #dfe1e5;
+    width: 75%;
+    min-width: 250px;
 }
 
-.search-bar:hover, .search-bar:focus, .search-bar:active {
+.search-bar:hover {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
-}
-
-.buttons {
-    display: flex;
 }
 
 .main-btn {
@@ -101,13 +123,17 @@ a .apps-img {
     border: 1px solid #c6c6c6;
 }
 
-button {
-    border-radius: 4px;
-    border: none;
-    padding: 0.5rem 0.8rem;
+footer a {
+    font-size: 0.9rem;
+    color: #5F6368;
 }
 
-button:hover {
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+.main-btn-wrap {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
+.logo {
+    width: 100%;
+    margin: 0 auto
+}
